@@ -1,5 +1,5 @@
 var test = require('tape');
-var defOpts = require('default-opts');
+var defOpts = require('../index.js');
 
 var opts = {"boolean":true,"number":123,"string":"Hello World"};
 var defaults = {"boolean":false,"number":321,"string":"Goodbye World","default":"default"};
