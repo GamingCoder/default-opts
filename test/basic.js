@@ -7,19 +7,20 @@ var defaults = {"boolean":false,"number":321,"string":"Goodbye World","default":
 test('sync', function(t) {
 	t.plan(1);
 	var syncResult = defOpts.optsSync(opts, defaults);
-	t.equal(syncResult, {"boolean":true,"number":123,"string":"Hello World","default":"default"});
+	t.deepEqual(syncResult, { boolean: true, default: 'default', number: 123, string: 'Hello World' }
+);
 });
 
 test('async', function(t) {
-	t.plan(1);
 	defOpts.opts(opts, defaults, function(err, result) {
-		t.equal(result, {"boolean":true,"number":123,"string":"Hello World","default":"default"});
+		t.deepEqual(result, {"boolean":true,"number":123,"string":"Hello World","default":"default"});
+		t.end();
 	});
 });
 
 test('promise', function(t) {
 	t.plan(1);
 	defOpts.opts(opts, defaults).then(function(result) {
-		t.equal(result, {"boolean":true,"number":123,"string":"Hello World","default":"default"});
+		t.deepEqual(result, {"boolean":true,"number":123,"string":"Hello World","default":"default"});
 	});
 });
