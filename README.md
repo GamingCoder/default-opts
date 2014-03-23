@@ -1,4 +1,4 @@
-# default-opts
+# default-opts [![Build Status](https://travis-ci.org/GamingCoder/default-opts.svg)](https://travis-ci.org/GamingCoder/default-opts)
 Set default values for opts.
 # Functions
 Please note that this is directly from `test/basic.js`
