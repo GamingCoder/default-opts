@@ -1,0 +1,23 @@
+{
+  "name": "default-opts",
+  "version": "0.0.0",
+  "description": "Set defaults for options",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GamingCoder/default-opts.git"
+  },
+  "keywords": [
+    "opts",
+    "default"
+  ],
+  "author": "Tobias Meyer (GamingCoder)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GamingCoder/default-opts/issues"
+  },
+  "homepage": "https://github.com/GamingCoder/default-opts"
+}
