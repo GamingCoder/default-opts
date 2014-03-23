@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GamingCoder/default-opts/issues"
   },
-  "homepage": "https://github.com/GamingCoder/default-opts"
+  "homepage": "https://github.com/GamingCoder/default-opts",
+  "devDependencies": {
+    "tape": "~2.11.0"
+  }
 }
