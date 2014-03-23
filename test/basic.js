@@ -14,6 +14,7 @@ test('async', function(t) {
 	t.plan(1);
 	defOpts.opts(opts, defaults, function(err, result) {
 		t.equal(result, {"boolean":true,"number":123,"string":"Hello World","default":"default"});
+	});
 });
 
 test('promise', function(t) {
